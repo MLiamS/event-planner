@@ -64,5 +64,13 @@ public class test{
     assertEquals("200 Plus Bar-Tender - coupon code = 200B", testEvent2.getCoupon());
   }
 
+  @Test
+  public void event_applyCouponcodeInt() {
+    Event testEvent = new Event(1,1,1,1);
+    int oneFifty = testEvent.applyCoupon("200S");
+    int twohundred = testEvent.applyCoupon("200B");
+    assertEquals(oneFifty , 150);
+    assertEquals(twohundred , 200 );
+  }
 
 }
