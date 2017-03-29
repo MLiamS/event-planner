@@ -49,10 +49,19 @@ public class test{
     Event testEvent = new Event(10,2,3,4);
 
     int sampleCost = testEvent.getCost();
-    int costTest = 1100;
+    int costTest = 1100; //with a Event(10,2,3,4)
 
     assertTrue(costTest == sampleCost);
 
+  }
+
+  @Test
+  public void event_getCouponReturnsCodeString() {
+    Event testEvent = new Event(200,4,1,1);
+    Event testEvent2 = new Event(200,1,4,1);
+
+    assertEquals("200 Plus Steak - coupon code = 200S", testEvent.getCoupon());
+    assertEquals("200 Plus Bar-Tender - coupon code = 200B", testEvent2.getCoupon());
   }
 
 

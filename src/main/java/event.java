@@ -58,4 +58,15 @@ public class Event  {
 
   return cost;
   }
+
+
+  public String getCoupon() {
+  if (mGuestCount > 199 && mFood == 4) {
+    return "200 Plus Steak - coupon code = 200S";
+  } else if (mGuestCount > 199 && mDrinks == 4) {
+      return "200 Plus Bar-Tender - coupon code = 200B";
+      } else {return "";}
+  }
+
+
 }

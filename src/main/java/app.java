@@ -20,5 +20,8 @@ public class App{
     String entertainmentInput = myConsole.readLine();
     int entertainmentChoice = Integer.parseInt(entertainmentInput);
 
+    System.out.println("Your total cost is XXXX you are eligible for XXXX coupons");
+    // String entertainmentInput = myConsole.readLine();
+    // int entertainmentChoice = Integer.parseInt(entertainmentInput);
   }
 }
