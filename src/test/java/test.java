@@ -43,4 +43,17 @@ public class test{
     assertTrue(testDrinks == testEvent.getDrinks());
     assertTrue(testEntertainment == testEvent.getEntertainment());
   }
+
+  @Test
+  public void event_getCostdoesJustThat() {
+    Event testEvent = new Event(10,2,3,4);
+
+    int sampleCost = testEvent.getCost();
+    int costTest = 1100;
+
+    assertTrue(costTest == sampleCost);
+
+  }
+
+
 }
