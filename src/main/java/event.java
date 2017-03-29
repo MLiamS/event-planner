@@ -27,8 +27,6 @@ public class Event  {
   }
 
 
-
-
   public int getCost()  {
   int cost = 0;
   // Cost Calculations...
