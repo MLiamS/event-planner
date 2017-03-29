@@ -26,6 +26,21 @@ public class Event  {
     return mEntertainment;
   }
 
+  public void setCount(int input) {
+    mGuestCount = input;
+  }
+
+  public void setFood(int input) {
+    mFood = input;
+  }
+
+  public void setDrinks(int input) {
+    mDrinks = input;
+  }
+
+  public void setEntertainment(int input) {
+    mEntertainment = input;
+  }
 
   public int getCost()  {
   int cost = 0;
