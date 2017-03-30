@@ -56,6 +56,7 @@ public class Event  {
   if (mEntertainment == 3) {cost += 40*mGuestCount;}
   if (mEntertainment == 4) {cost += 60*mGuestCount;}
 
+
   return cost;
   }
 
@@ -65,15 +66,15 @@ public class Event  {
       return "200 Plus Steak - coupon code = 200S";
     } else if (mGuestCount > 199 && mDrinks == 4) {
         return "200 Plus Bar-Tender - coupon code = 200B";
-        } else {return "";
+      } else {return "Sorry no coupons availble at this";
           }
     }
 
   public int applyCoupon(String code) {
     if (code == "200S") {
-      return 150;
+      return 1500;
     } else if (code == "200B") {
-      return 200;
+      return 2000;
     } else {return 0;
       }
   }

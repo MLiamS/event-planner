@@ -69,8 +69,8 @@ public class test{
     Event testEvent = new Event(1,1,1,1);
     int oneFifty = testEvent.applyCoupon("200S");
     int twohundred = testEvent.applyCoupon("200B");
-    assertEquals(oneFifty , 150);
-    assertEquals(twohundred , 200 );
+    assertEquals(oneFifty , 1500);
+    assertEquals(twohundred , 2000 );
   }
 
 }
