@@ -25,12 +25,11 @@ public class App{
     System.out.println(event.getCoupon());
     System.out.println("Please enter a coupon code if you have one");
 
-    String cCode = myConsole.readLine(); //----------------------------------------------------------------------------------------------------
+    String cCode = myConsole.readLine();
 
-    int discount = event.applyCoupon(cCode); //-------- THIS WONT WORK ---- WHY WONT .applyCoupon() TAKE THE cCode STRING I FEED IT ARGGGGGGGGG
+    int discount = event.applyCoupon(cCode);   //----------------------------
 
-    String discountString = String.valueOf(discount);//----------------------------------------------------------------------------------------
-
+    String discountString = Integer.toString(discount); //------------ DONT KNOW WHY THIS WOONT PARSE?????
 
     System.out.println("With the code you entered you have recieved $" + discountString + " off");
     System.out.println("Thank You!\nYour event with " + guestNumInput + " guests will cost a total of $" + (event.getCost() - discount) + ".00 ");
